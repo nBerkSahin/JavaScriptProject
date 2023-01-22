@@ -1,50 +1,47 @@
 /*
-Objects are used to store data
-Objects are created using {}
+fName : John --> String
+age : 20 --> Number
+isEmployed : true --> Boolean
+
+adress : cadde = 4.cadde,
+    sokak=5.sokak,
+    ilçe=Kadıkoy, 
+    il=İStanbul,
+    ülke=Türkiye
+
+hobbies : swimming, painting, coding, gaming, running --> Array
 
 */
 
-var fName = 'John'
-var lName = 'Cash'
-var age = 19
-var info = `${fName} ${lName} ${age}`
-console.log(info)
-
-//Creating person object
-var person = {
+const person = {
     fName:'John',
-    lName:'Cash',
-    age:19,
-    isEmployed:true
+    age:20,
+    isEmployed:true,
+    adress : {cadde : '4.cadde',
+    sokak:'5.sokak',
+    ilce:'Kadıkoy', 
+    il:'İStanbul',
+    ulke:'Türkiye'
+    },
+    hobbies : ['swimming','painting','coding','gaming','running']
 }
 
-//Calling the person object
+//Calling
 console.log(person)
-
-console.log(typeof(person))
-
-//Calling the info using .notation
 console.log(person.fName)
-console.log(person.lName)
+console.log(person.isEmployed)
 console.log(person.age)
+console.log(person.adress)
 
-console.log(typeof(person.lName))
-console.log(typeof(person.age))
+console.log(person.adress.sokak)
+console.log(person.adress.cadde)
+console.log(person.adress.ilce)
+console.log(person.adress.il)
+console.log(person.adress.ulke)
 
-//Calling the info using [] notation. Less common
-console.log(person['fName'])
-console.log(person['lName'])
-console.log(person['age'])
-console.log(person['isEmployed'])
-
-//*****Editting Objects*****
-//1. Using . notation
-person.fName='Sam'
-person.lName='Walton'
-console.log(person)
-
-//1. Using [] notation
-person['age']=60
-person['isEmployed']=false
-
-console.log(person)
+console.log(person.hobbies[0])
+console.log(person.hobbies[1])
+console.log(person.hobbies[2])
+console.log(person.hobbies[3])
+console.log(person.hobbies[4])
+console.log(person.hobbies[10])
